@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  # Defines the root path route ("/")
+  root 'static_pages#home'
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   get 'static_pages/home'
   get 'static_pages/help'
   get 'static_pages/about'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  root 'application#hello'
+  get 'static_pages/contact'
 end
